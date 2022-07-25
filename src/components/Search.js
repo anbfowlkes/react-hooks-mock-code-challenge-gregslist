@@ -1,9 +1,15 @@
 import React from "react";
 
-function Search() {
-  function handleSubmit(e) {
+function Search({ dataList, setDataList } ) {
+
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log("submitted");
+    console.log(e.target[0].value)
+    // setSearchText(e.target[0].value)
+    setDataList(dataList.filter((item) => {
+      return (item.description.includes(e.target[0].value) ? item : null)
+    }))
   }
 
   return (
@@ -12,8 +18,7 @@ function Search() {
         type="text"
         id="search"
         placeholder="search free stuff"
-        value={""}
-        onChange={(e) => console.log(e.target.value)}
+        // onChange={(e) => console.log(e.target.value)}
       />
       <button type="submit">🔍</button>
     </form>
