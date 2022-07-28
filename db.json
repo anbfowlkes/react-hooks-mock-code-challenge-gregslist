@@ -29,6 +29,12 @@
       "description": "Treadmill Parts For Free",
       "image": "./images/treadmill.jpg",
       "location": "East Flatbush"
+    },
+    {
+      "description": "cool headphones",
+      "image": "https://p3-ofp.static.pub/fes/cms/2021/09/14/00czgvflhm4rwiod2jx0zcozl6cudf735501.png",
+      "location": "manhattan",
+      "id": 8
     }
   ]
 }
